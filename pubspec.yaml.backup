@@ -1,0 +1,40 @@
+# BACKUP OF PUBSPEC.YAML
+name: battery_notification_manager
+description: A lightweight Windows application to monitor battery status and notify the user when to unplug the charger.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.2
+  
+  # Storage & Native Windows APIs
+  shared_preferences: ^2.2.3
+  battery_plus: ^6.0.2
+  window_manager: ^0.4.3
+  tray_manager: ^0.3.2
+  local_notifier: ^0.1.6
+  launch_at_startup: ^0.5.1
+  package_info_plus: ^8.0.0
+  win32: ^5.5.0
+  ffi: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Asset references for the tray icons
+  assets:
+    - assets/app_icon.png
+    - assets/app_icon_alert.png
